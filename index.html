@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="libs/iconfont/iconfont.css"/>
+		<script src="js/sendUrl.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libs/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.jquery.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="libs/three.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libs/Projector.js" type="text/javascript" charset="utf-8"></script>
+    	<script src="libs/OrbitControls.js" type="text/javascript" charset="utf-8"></script>
+   		<script src="libs/postprocessing/EffectComposer.js" type="text/javascript" charset="utf-8"></script>
+    	<script src="libs/postprocessing/RenderPass.js"></script>
+		<script src="libs/postprocessing/ShaderPass.js"></script>
+		<script src="libs/postprocessing/MaskPass.js"></script>
+		<script src="libs/shaders/CopyShader.js"></script>
+		<script src="libs/shaders/ColorCorrectionShader.js"></script>
+		<script src="libs/shaders/VignetteShader.js"></script>
+		<script src="libs/loaders/sea3d/SEA3D.js"></script>
+		<script src="libs/loaders/sea3d/SEA3DLZMA.js"></script>
+		<script src="libs/loaders/sea3d/SEA3DLoader.js"></script>
+		<script src="libs/loaders/sea3d/SEA3DLegacy.js"></script>
+		<script src="libs/Detector.js"></script>
+		<script src="libs/tweenjs-0.6.2.combined.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="libs/ammo.js"></script>
+		<script src="libs/ammo.three.js"></script>
+		<script src="js/THREE.MeshLine.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="js/index.js"></script>
+		<!--<script src="js/index3d.js" type="text/javascript" charset="utf-8"></script>-->
+		<!--<script src="js/3d.js" type="text/javascript" charset="utf-8"></script>-->
+		<style type="text/css">
+			.swiper-container {
+			    width: 100%;
+			    padding-top: 50px;
+			    padding-bottom: 50px;
+			}
+			.swiper-slide {
+			    background-position: center;
+			    background-size: cover;
+			    width: 350px;
+			    height: 420px;
+			    box-shadow: 0 0 20px 2px #5F5F5F;
+			    border-radius: 10px;
+			    padding:0 5px;
+			    background: #fff;
+			}
+		</style>
+	</head>
+
+	<body ondragstart="return false">
+		<div id="box">
+			<!--路线加号-->
+			<div id="addFuHao">＋</div>
+			
+			<div id="logo">北京灌木谷科技有限公司</div>
+			<div id="address">
+				<p>北京新国展车展</p>
+				<p class="p1">我们怎样才能帮助您 HOW CAN WE HELP YOU</p>
+			</div>
+			
+			<!--详情小弹窗-->
+			<div id="min-detail">
+				<div class="detail-box">
+					<i class="icon iconfont icon-Emptied close"></i>
+					<p class="p1">华莱士</p>
+					<span>带我去 take me go</span>
+					<span>详情</span>
+				</div>
+			</div>
+			
+			<!--轮播图-->
+			<div id="banner">
+				<div class="swiper-container">
+			        <div class="swiper-wrapper">
+			            <div class="swiper-slide">
+			            	<dl class="banner_dl">
+			            		<dt>
+			            			<img src="img/eat_bsk.png"/>
+			            		</dt>
+			            		<dd>
+			            			<span>中国</span>
+			            			<span>China</span>
+			            		</dd>
+			            	</dl>
+			            	<div class="border_color"></div>
+			            	<p class="p1">Pizza hut</p>
+			            	<p class="p2">必胜客</p>
+			            </div>
+			            <div class="swiper-slide"></div>
+			            <div class="swiper-slide"></div>
+			            <div class="swiper-slide"></div>
+			            <div class="swiper-slide"></div>
+			            <div class="swiper-slide"></div>
+			            <div class="swiper-slide"></div>
+			        </div>
+			        <!-- Add Pagination -->
+			        <div class="swiper-pagination"></div>
+			   </div>
+			</div>
+			
+			<!--品牌、餐饮搜索-->
+			<ul id="sou">
+				<li>A</li>
+				<li>B</li>
+				<li>C</li>
+				<li>D</li>
+				<li>E</li>
+				<li>F</li>
+				<li>G</li>
+				<li>H</li>
+				<li>I</li>
+				<li>J</li>
+				<li>K</li>
+				<li>L</li>
+				<li>M</li>
+				<li>N</li>
+				<li>O</li>
+				<li>P</li>
+				<li>Q</li>
+				<li>R</li>
+				<li>S</li>
+				<li>T</li>
+				<li>U</li>
+				<li>V</li>
+				<li>W</li>
+				<li>X</li>
+				<li>Y</li>
+				<li>Z</li>
+				<li><i class="icon iconfont icon-Emptied" style="font-size: 20px;font-weight: 600;"></i></li>
+			</ul>
+			
+			<!--菜单按钮-->
+			<button id="btn-menu">菜单 Menu</button>
+			<!--详情-->
+			 <div class="detail">
+		    	<button class="btn_detail">×</button>
+		    	<p class="p1">必胜客 Pizza hut</p>
+		    	<div class="detail_main clear">
+		    		<div class="left">
+		    			<img src="img/pizza.png"/>
+		    		</div>
+		    		<div class="right clear">
+		    			<div class="top clear">
+		    				<p class="p2">
+			    				<span>简介 </span>
+			    				<span> Introduction to</span>
+			    			</p>
+			    			<p class="p3">
+			    				发生时仿佛是刘嘉玲抗辐射
+			    				发生时仿佛是刘嘉玲抗辐射
+			    				发生时仿佛是刘嘉玲抗辐射
+			    				发生时仿佛是刘嘉玲抗辐射
+			    				发生时仿佛是刘嘉玲抗辐射
+			    			</p>
+			    			<p class="p4">
+			    				<span>中</span>
+			    				<span>English</span>
+			    			</p>
+		    			</div>
+		    			<ul class="center">
+		    				<li>
+		    					<span>电话 The phone</span>
+		    					<span>0371-5154712</span>
+		    				</li>
+		    				<li>
+		    					<span>传真 fax</span>
+		    					<span>0371-5154712</span>
+		    				</li>
+		    				<li>
+		    					<span>邮箱 Email</span>
+		    					<span>0371-5154712</span>
+		    				</li>
+		    				<li>
+		    					<span>网站 Web site</span>
+		    					<span>0371-5154712</span>
+		    				</li>
+		    			</ul>
+		    			<dl class="bottom clear">
+		    				<dt>
+		    					<img src="img/code.png"/>
+		    				</dt>
+		    				<dd class="cursor">
+		    					<span>餐饮详情</span>
+		    					<span>details</span>
+		    				</dd>
+		    				<dd class="cursor">
+		    					<span>快带我去</span>
+		    					<span>Take me go</span>
+		    				</dd>
+		    				<dd class="cursor">
+		    					<span>添加路线</span>
+		    					<span>add</span>
+		    				</dd>
+		    			</dl>
+		    		</div>
+		    	</div>
+		    </div>
+			
+			<!--扫一扫-->
+			<div id="wxcode">
+				<div id="wxcode_box">
+					<img src="img/wxcode.png"/>
+				</div>
+				<p>扫一扫发送到手机</p>
+			</div>
+			
+			<!--搜索键盘-->
+			<div id="keyboard">
+				<ul class="left">
+					<li>A</li>
+					<li>B</li>
+					<li>C</li>
+					<li>D</li>
+					<li>E</li>
+					<li>F</li>
+					<li>G</li>
+					<li>H</li>
+					<li>I</li>
+					<li>J</li>
+					<li>K</li>
+					<li>L</li>
+					<li>M</li>
+					<li>N</li>
+					<li>O</li>
+					<li>P</li>
+					<li>Q</li>
+					<li>R</li>
+					<li>S</li>
+					<li>T</li>
+					<li>U</li>
+					<li>V</li>
+					<li>W</li>
+					<li>X</li>
+					<li>Y</li>
+					<li>Z</li>
+				</ul>
+				<div class="right cursor">
+					<span title="回删">←</span>
+					<span>
+						<img src="img/clear.png" title="清空"/>
+					</span>
+				</div>
+			</div>
+			<!--搜索弹窗样式-->
+			<div id="search">
+				<input type="text" name="" id="search_ipt" value="" readonly/>
+				<i id="search_btn" class="icon iconfont icon-sousuo"></i>
+				
+				<ul class="list">
+					<li>奥迪</li>
+					<li>阿斯顿马丁</li>
+					<li>保时捷911</li>
+					<li>保时捷911</li>
+					<li>保时捷911</li>
+				</ul>
+			</div>
+
+			<!--底部导航-->
+			<div id="bom_nav">
+				
+				<div class="nav clear">
+					<dl>
+						<dt>
+							<img src="img/shop.png"/>
+						</dt>
+						<dd>品牌指南</dd>
+						<dd>brand</dd>
+					</dl>
+					<dl>
+						<dt>
+							<img src="img/eat.png"/>
+						</dt>
+						<dd>餐饮指南</dd>
+						<dd>brand</dd>
+					</dl>
+					<dl class="active">
+						<dt>
+							<img src="img/map.png"/>
+						</dt>
+						<dd>地图</dd>
+						<dd>brand</dd>
+					</dl>
+					<dl>
+						<dt>
+							<img src="img/load.png"/>
+						</dt>
+						<dd>路线下载</dd>
+						<dd>Download</dd>
+					</dl>
+					<dl id="service">
+						<dt>
+							<img src="img/service.png"/>
+						</dt>
+						<dd>会展服务</dd>
+						<dd>service</dd>
+					</dl>
+				</div>
+			</div>
+
+			<!--我的路线拖拽按钮-->
+			<div id="menu">
+				<div class="menu-list">
+					<dl>
+						<dt>
+							<i class="icon iconfont icon-msnui-service"></i>
+						</dt>
+						<dd>服务</dd>
+					</dl>
+					<dl>
+						<dt>
+							<i class="icon iconfont icon-2"></i>
+						</dt>
+						<dd>品牌</dd>
+					</dl>
+					<dl>
+						<dt>
+							<i class="icon iconfont icon-canyin"></i>
+						</dt>
+						<dd>餐饮</dd>
+					</dl>
+				</div>
+				<p class="menu_p1 cursor">
+					<i class="icon iconfont icon-caidan-copy"></i>
+				</p>
+				<p class="menu_p2">菜单</p>
+			</div>
+			<!--我的路线拖拽按钮-->
+			<div id="way">
+				<p class="way_p1 cursor">
+					+
+				</p>
+				<p class="way_p2">一次逛完</p>
+				<div id="way_list" class="clear">
+					<p class="p1 cursor">
+						<img src="img/way.png" />
+					</p>
+					<ul class="nav clear">
+						<!--<li class="clear">
+							<span>1</span>
+							<span>奥迪汽车</span>
+							<i class="icon iconfont icon-Emptied removeLine"></i>
+						</li>
+						<li class="clear">
+							<span>2</span>
+							<span>必胜客</span>
+							<i class="icon iconfont icon-Emptied removeLine"></i>
+						</li>-->
+					</ul>
+					
+					<p class="p2">我的路线</p>
+				</div>
+			</div>
+			
+			<div id="box-3d">
+				<ul id="service_list">
+					<li>
+						<img src="img/service/chinafood.png"/>
+						<span>中餐</span>
+					</li>
+					<li>
+						<img src="img/service/englishfood.png"/>
+						<span>西餐</span>
+					</li>
+					<li>
+						<img src="img/service/stopcar.png"/>
+						<span>停车场</span>
+					</li>
+					<li>
+						<img src="img/service/atm.png"/>
+						<span>取款机</span>
+					</li>
+					<li>
+						<img src="img/service/wc.png"/>
+						<span>厕所</span>
+					</li>
+					<li>
+						<img src="img/service/bus.png"/>
+						<span>公交站</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+
+</html>

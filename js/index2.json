@@ -1,0 +1,39 @@
+[
+		{
+		"obj":"box461",
+		"num":{"r":"255","g":"255","b":"0"},
+		"imgFile":"img/shop-eat.png",
+		"imgSizeX":"24",
+		"imgSizeY":"12",
+		"text1":"红星艺术",
+		"text2":"go here"
+	},
+	{
+		"obj":"box033",
+		"num":{"r":"255","g":"255","b":"0"},
+		"imgFile":"img/draw.png",
+		"imgSizeX":"24",
+		"imgSizeY":"12",
+		"text1":"星河画廊",
+		"text2":"go here"
+	},
+	{
+		"obj":"box1125",
+		"num":{"r":"255","g":"255","b":"0"},
+		"imgFile":"img/shop-eat.png",
+		"imgSizeX":"24",
+		"imgSizeY":"12",
+		"text1":"美食餐厅",
+		"text2":"go here"
+	},
+	{
+		"obj":"box134",
+		"num":{"r":"255","g":"255","b":"0"},
+		"imgFile":"img/draw.png",
+		"imgSizeX":"24",
+		"imgSizeY":"12",
+		"text1":"常青画廊",
+		"text2":"go here"
+	}
+
+]

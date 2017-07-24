@@ -1,0 +1,62 @@
+[
+	
+		
+	{
+		"obj":"box461",
+		"num":{"r":"0","g":"255","b":"255"},
+		"imgFile":"img/shop.png",
+		"imgSizeX":"24",
+		"imgSizeY":"12",
+		"text1":"红星艺术",
+		"text2":"go here"
+	},
+	{
+		"obj":"box037",
+		"num":{"r":"0","g":"255","b":"255"},
+		"imgFile":"img/draw.png",
+		"imgSizeX":"24",
+		"imgSizeY":"12",
+		"text1":"红星艺术",
+		"text2":"go here"
+	},
+	{
+		"obj":"box2105",
+		"num":{"r":"0","g":"255","b":"255"},
+		"imgFile":"img/draw.png",
+		"imgSizeX":"24",
+		"imgSizeY":"12",
+		"text1":"红星艺术",
+		"text2":"go here"
+	},
+	{
+		"obj":"box2101",
+		"num":{"r":"0","g":"255","b":"255"},
+		"imgFile":"img/draw.png",
+		"imgSizeX":"24",
+		"imgSizeY":"12",
+		"text1":"星新画廊",
+		"text2":"go here"
+	},
+	{
+		"obj":"box216",
+		"num":{"r":"0","g":"255","b":"255"},
+		"imgFile":"img/draw.png",
+		"imgSizeX":"24",
+		"imgSizeY":"12",
+		"text1":"星海画廊",
+		"text2":"go here"
+	},
+	{
+		"obj":"box253",
+		"num":{"r":"0","g":"255","b":"255"},
+		"imgFile":"img/draw.png",
+		"imgSizeX":"24",
+		"imgSizeY":"12",
+		"text1":"星海画廊",
+		"text2":"go here"
+	}
+
+	
+	
+	
+]

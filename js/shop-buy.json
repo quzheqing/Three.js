@@ -1,0 +1,80 @@
+[
+	
+		
+	{
+		"obj":"box461",
+		"num":{"r":"255","g":"255","b":"0"},
+		"imgFile":"img/shop-buy.png",
+		"imgSizeX":"24",
+		"imgSizeY":"12",
+		"text1":"红星艺术",
+		"text2":"go here"
+	},
+	{
+		"obj":"box2152",
+		"num":{"r":"255","g":"255","b":"0"},
+		"imgFile":"img/shop-buy.png",
+		"imgSizeX":"24",
+		"imgSizeY":"12",
+		"text1":"购物超市",
+		"text2":"go here"
+	},
+	{
+		"obj":"box2105",
+		"num":{"r":"255","g":"255","b":"0"},
+		"imgFile":"img/shop-buy.png",
+		"imgSizeX":"24",
+		"imgSizeY":"12",
+		"text1":"红星艺术",
+		"text2":"go here"
+	},
+	{
+		"obj":"box046",
+		"num":{"r":"255","g":"255","b":"0"},
+		"imgFile":"img/shop-buy.png",
+		"imgSizeX":"20",
+		"imgSizeY":"12",
+		"text1":"小卖部",
+		"text2":"go here"
+	},
+	{
+		"obj":"box024",
+		"num":{"r":"255","g":"255","b":"0"},
+		"imgFile":"img/shop-buy.png",
+		"imgSizeX":"22",
+		"imgSizeY":"12",
+		"text1":"大商场",
+		"text2":"go here"
+	},
+	{
+		"obj":"box006",
+		"num":{"r":"255","g":"255","b":"0"},
+		"imgFile":"img/shop-buy.png",
+		"imgSizeX":"24",
+		"imgSizeY":"12",
+		"text1":"购物超市",
+		"text2":"go here"
+	},
+	{
+		"obj":"box168",
+		"num":{"r":"255","g":"255","b":"0"},
+		"imgFile":"img/shop-buy.png",
+		"imgSizeX":"24",
+		"imgSizeY":"12",
+		"text1":"购物超市",
+		"text2":"go here"
+	},
+	{
+		"obj":"box229",
+		"num":{"r":"255","g":"255","b":"0"},
+		"imgFile":"img/shop-buy.png",
+		"imgSizeX":"24",
+		"imgSizeY":"12",
+		"text1":"购物超市",
+		"text2":"go here"
+	}
+
+	
+	
+	
+]

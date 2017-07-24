@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<title>Direction Line</title>
+<body>
+	<canvas id="myCanvas1" width="800" height="600"
+		style="border:1px dotted #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+	<script>
+		function drawDirectionLine(x1, y1, x2, y2) {
+			var angle = Math.abs(Math.atan((x2 - x1) / (y2 - y1))); //倾斜角余角
+			var length = 10; //箭头斜线长度
+			var degree = Math.PI / 6; //箭头倾斜角
+			var theta = 0;
+			var altha = 0;
+			var a1 = 0;
+			var b1 = 0;
+			var a2 = 0;
+			var b2 = 0;
+
+			console.log("angle: " + angle);
+			console.log("degree: " + degree);
+
+			if (angle >= degree && angle <= Math.PI / 2 - degree) {
+				console.log("30-60");
+				theta = angle - degree;
+				altha = Math.PI / 2 - 2 * degree - theta;
+				if (x2 >= x1) {
+					console.log("x2 >= x1");
+					a1 = x2 - length * Math.sin(theta);
+					a2 = x2 - length * Math.cos(altha);
+				} else {
+					console.log("x2 < x1");
+					a1 = x2 + length * Math.sin(theta);
+					a2 = x2 + length * Math.cos(altha);
+				}
+				if (y2 >= y1) {
+					console.log("y2 >= y1");
+					b1 = y2 - length * Math.cos(theta);
+					b2 = y2 - length * Math.sin(altha);
+				} else {
+					console.log("y2 < y1");
+					b1 = y2 + length * Math.cos(theta);
+					b2 = y2 + length * Math.sin(altha);
+				}
+			} else {
+				console.log("0-30 && 60-90");
+				theta = angle - degree;
+				altha = theta + 2 * degree - Math.PI / 2;
+				if (x2 >= x1 && y2 >= y1) {
+					console.log("x2 >= x1 && y2 >= y1");
+					a1 = x2 - length * Math.sin(theta);
+					b1 = y2 - length * Math.cos(theta);
+					a2 = x2 - length * Math.cos(altha);
+					b2 = y2 + length * Math.sin(altha);
+				} else if (x2 >= x1 && y2 < y1) {
+					console.log("x2 >= x1 && y2 < y1");
+					a1 = x2 - length * Math.sin(theta);
+					b1 = y2 + length * Math.cos(theta);
+					a2 = x2 - length * Math.cos(altha);
+					b2 = y2 - length * Math.sin(altha);
+				} else if (x2 < x1 && y2 < y1) {
+					console.log("x2 < x1 && y2 < y1");
+					a1 = x2 + length * Math.sin(theta);
+					b1 = y2 + length * Math.cos(theta);
+					a2 = x2 + length * Math.cos(altha);
+					b2 = y2 - length * Math.sin(altha);
+				} else {
+					console.log("x2 < x1 && y2 >= y1");
+					a1 = x2 + length * Math.sin(theta);
+					b1 = y2 - length * Math.cos(theta);
+					a2 = x2 + length * Math.cos(altha);
+					b2 = y2 + length * Math.sin(altha);
+				}
+			}
+
+			ctx.beginPath();
+			ctx.moveTo(x1, y1);
+			ctx.lineTo(x2, y2);
+			ctx.lineTo(a1, b1);
+			ctx.stroke();
+			ctx.moveTo(x2, y2);
+			ctx.lineTo(a2, b2);
+			ctx.stroke();
+
+			console.log("x2: " + x2 + "   " + "y2: " + y2);
+			console.log("a1: " + a1 + "   " + "b1: " + b1);
+			console.log("a2: " + a2 + "   " + "b2: " + b2);
+		}
+	</script>
+	<script>
+		var c = document.getElementById("myCanvas1");
+		var ctx = c.getContext("2d");
+
+		drawDirectionLine(30,30,100,100);
+		drawDirectionLine(200,100,130,30);
+		drawDirectionLine(230,100,300,30);
+		drawDirectionLine(400,30,330,100);
+
+		drawDirectionLine(30,200,100,230);
+		drawDirectionLine(130,230,200,200);
+		drawDirectionLine(300,230,230,200);
+		drawDirectionLine(400,200,330,230);
+		
+		drawDirectionLine(30, 330, 60, 400);
+		drawDirectionLine(130, 400, 160, 330);
+		drawDirectionLine(260, 400, 230, 330);
+		drawDirectionLine(360, 330, 330, 400);
+		
+		drawDirectionLine(30,510,100,510);
+		drawDirectionLine(160,540,160,480);
+		drawDirectionLine(260,480,260,540);
+		drawDirectionLine(400,510,330,510);
+	</script>
+</body>
+</html>
