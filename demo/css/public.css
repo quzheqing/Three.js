@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+/* CSS Document */
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    font-family: "微软雅黑";
+}
+ul li{
+    list-style:none;
+}
+img {
+    border:none;
+}
+a {
+    text-decoration:none;
+}
+.none{
+    display: none;
+}
+.position-a{
+    position: absolute;
+}
+.position-r{
+    position: relative;
+}
+.position-f{
+    position: fixed;
+}
+.clearFloat{
+    zoom: 1;
+}
+.clearFloat:after{
+    clear: both;
+    content: ".";
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+.float-l{
+    float: left;
+}
+.float-r{
+    float: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.font12{
+    font-size: 12px;!important;
+ }
+.font14{
+    font-size: 14px;!important;
+}
+.font16{
+    font-size: 16px;!important;
+}
+.font18{
+    font-size: 18px;!important;
+}
+.font20{
+    font-size: 20px;!important;
+}
+.font22{
+    font-size: 22px;!important;
+}
+.font24{
+    font-size: 24px;!important;
+}
+.font26{
+    font-size: 26px;!important;
+}
+.font30{
+    font-size: 30px;!important;
+}
+.font32{
+    font-size: 32px;!important;
+}
+.font34{
+    font-size: 34px;!important;
+}
+.font36{
+    font-size: 36px;!important;
+}
+.font38{
+    font-size: 38px;!important;
+}
+.cursor{
+    cursor: pointer;
+}
+.magin-r5{
+    margin-right: 5px;
+}
+.magin-t5{
+    margin-top: -5px;
+}

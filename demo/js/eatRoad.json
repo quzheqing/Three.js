@@ -1,0 +1,80 @@
+[
+	
+		
+	{
+		"obj":"box461",
+		"num":{"r":"255","g":"255","b":"0"},
+		"imgFile":"img/shop-eat.png",
+		"imgSizeX":"24",
+		"imgSizeY":"12",
+		"text1":"红星艺术",
+		"text2":"go here"
+	},
+	{
+		"obj":"box2152",
+		"num":{"r":"255","g":"255","b":"0"},
+		"imgFile":"img/eat.png",
+		"imgSizeX":"24",
+		"imgSizeY":"12",
+		"text1":"后来湘菜馆",
+		"text2":"go here"
+	},
+	{
+		"obj":"box2105",
+		"num":{"r":"255","g":"255","b":"0"},
+		"imgFile":"img/eat.png",
+		"imgSizeX":"24",
+		"imgSizeY":"12",
+		"text1":"后来湘菜馆",
+		"text2":"go here"
+	},
+	{
+		"obj":"box046",
+		"num":{"r":"255","g":"255","b":"0"},
+		"imgFile":"img/shop-eat.png",
+		"imgSizeX":"22",
+		"imgSizeY":"12",
+		"text1":"禾风小馆",
+		"text2":"go here"
+	},
+	{
+		"obj":"box024",
+		"num":{"r":"255","g":"255","b":"0"},
+		"imgFile":"img/shop-eat.png",
+		"imgSizeX":"24",
+		"imgSizeY":"12",
+		"text1":"后来湘菜馆",
+		"text2":"go here"
+	},
+	{
+		"obj":"box006",
+		"num":{"r":"255","g":"255","b":"0"},
+		"imgFile":"img/shop-eat.png",
+		"imgSizeX":"28",
+		"imgSizeY":"12",
+		"text1":"很好吃的火锅",
+		"text2":"go here"
+	},
+	{
+		"obj":"box168",
+		"num":{"r":"255","g":"255","b":"0"},
+		"imgFile":"img/shop-eat.png",
+		"imgSizeX":"24",
+		"imgSizeY":"12",
+		"text1":"后来湘菜馆",
+		"text2":"go here"
+	},
+	{
+		"obj":"box229",
+		"num":{"r":"255","g":"255","b":"0"},
+		"imgFile":"img/shop-eat.png",
+		"imgSizeX":"18",
+		"imgSizeY":"12",
+		"text1":"美食",
+		"text2":"go here"
+	}
+
+	
+	
+	
+]

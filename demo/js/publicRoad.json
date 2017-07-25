@@ -1,0 +1,80 @@
+[
+	
+		
+	{
+		"obj":"box461",
+		"num":{"r":"255","g":"0","b":"1"},
+		"imgFile":"img/atm.png",
+		"imgSizeX":"8",
+		"imgSizeY":"8",
+		"text1":"",
+		"text2":""
+	},
+	{
+		"obj":"box2152",
+		"num":{"r":"255","g":"0","b":"1"},
+		"imgFile":"img/wc.png",
+		"imgSizeX":"8",
+		"imgSizeY":"8",
+		"text1":"",
+		"text2":""
+	},
+	{
+		"obj":"box2105",
+		"num":{"r":"255","g":"0","b":"1"},
+		"imgFile":"img/wc.png",
+		"imgSizeX":"8",
+		"imgSizeY":"8",
+		"text1":"",
+		"text2":""
+	},
+	{
+		"obj":"box046",
+		"num":{"r":"255","g":"0","b":"1"},
+		"imgFile":"img/stop.png",
+		"imgSizeX":"8",
+		"imgSizeY":"8",
+		"text1":"",
+		"text2":""
+	},
+	{
+		"obj":"box024",
+		"num":{"r":"255","g":"0","b":"1"},
+		"imgFile":"img/stop.png",
+		"imgSizeX":"8",
+		"imgSizeY":"8",
+		"text1":"",
+		"text2":""
+	},
+	{
+		"obj":"box006",
+		"num":{"r":"255","g":"0","b":"1"},
+		"imgFile":"img/atm.png",
+		"imgSizeX":"8",
+		"imgSizeY":"8",
+		"text1":"",
+		"text2":""
+	},
+	{
+		"obj":"box168",
+		"num":{"r":"255","g":"0","b":"1"},
+		"imgFile":"img/stop.png",
+		"imgSizeX":"8",
+		"imgSizeY":"8",
+		"text1":"",
+		"text2":""
+	},
+	{
+		"obj":"box229",
+		"num":{"r":"255","g":"255","b":"0"},
+		"imgFile":"img/wc.png",
+		"imgSizeX":"8",
+		"imgSizeY":"8",
+		"text1":"",
+		"text2":""
+	}
+
+	
+	
+	
+]

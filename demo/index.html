@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<div id="box">
+			<h1 class="logo">
+				<img src="img/logo.png"/>
+			</h1>
+			<!--天气部分-->
+			<div id="weather">
+				<div class="weather-l">
+					<p class="left-p1">27°</p>
+					<p class="left-p2">Clear</p>
+				</div>
+				<div class="weather-r">
+					<p class="right-p1">
+						PM.2.5 50
+					</p>
+					<p class="cursor right-p2"><span></span>详情</p>
+				</div>
+				<!--天气详情-->
+				<div id="detail">
+					<div class="det-top">
+						<p class="p1">多云</p>
+						<p class="p2">北京 海淀区</p>
+						<p class="p3">15°</p>
+					</div>
+					<div class="det-center">
+						<ul class="det-ul1 clear">
+							<li>
+								<span>现在</span>
+								<img src="img/weather.png"/>
+							</li>
+							<li>
+								<span>15:00</span>
+								<img src="img/weather1.png"/>
+							</li>
+							<li>
+								<span>16:00</span>
+								<img src="img/weather2.png"/>
+							</li>
+							<li>
+								<span>17:00</span>
+								<img src="img/weather3.png"/>
+							</li>
+							<li>
+								<span>18:00</span>
+								<img src="img/weather5.png"/>
+							</li>
+						</ul>
+						<p class="det-p"><img class="p-position" src="img/position.png"/>海淀区</p>
+						<ul class="det-ul1 clear">
+							<li>
+								<span>今天</span>
+								<!--<img src="img/weather1.png"/>-->
+								<i class="iconfont"></i>
+							</li>
+							<li>
+								<span>1/11</span>
+								<!--<img src="img/weather1.png"/>-->
+								<i class="iconfont"></i>
+							</li>
+							<li>
+								<span>2/11</span>
+								<!--<img src="img/weather2.png"/>-->
+								<i class="iconfont"></i>
+							</li>
+							<li>
+								<span>3/11</span>
+								<!--<img src="img/weather3.png"/>-->
+								<i class="iconfont"></i>
+							</li>
+							<li>
+								<span>4/11</span>
+								<!--<img src="img/weather5.png"/>-->
+								<i class="iconfont"></i>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="det-bottom">
+						<div class="bottom-div1">
+							<img class="img1" src="img/jd.png"/>
+							<img class="img2" src="img/sj.png"/>
+							<span class="span1">空气质量</span>
+							<span class="span2">优</span>
+							<span class="span3">PM2.5</span>
+							<span class="span4">20</span>
+						</div>
+						<div class="bottom-div2">
+							<dl>
+								<dt><img src="img/wind.png"/></dt>
+								<dd>西北风</dd>
+								<dd>5~6级</dd>
+							</dl>
+							<dl>
+								<dt><img src="img/tel.png"/></dt>
+								<dd>体感温度</dd>
+								<dd>5°</dd>
+							</dl>
+						</div>
+						<div class="bottom-div2">
+							<dl>
+								<dt><img src="img/humidity.png"/></dt>
+								<dd>湿度</dd>
+								<dd>26%</dd>
+							</dl>
+							<dl>
+								<dt><img src="img/see.png"/></dt>
+								<dd>能见度</dd>
+								<dd>35千米</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!--右侧侧边栏-->
+			<div id="box-r">
+				<!--<div class="right-line"></div>
+				<button id="right-btn" class="cursor">
+					<img src="img/right.png"/>
+				</button>-->
+				<div id="serviceList">
+					<ul class="list-ul">
+						<li>
+							<span class="span1">展会</span>
+							<span class="span2">service</span>
+						</li>
+						<li>
+							<span class="span1">服务</span>
+							<span class="span2">service</span>
+						</li>
+						<li>
+							<span class="span1">购物</span>
+							<span class="span2">service</span>
+						</li>
+						<li>
+							<span class="span1">餐饮</span>
+							<span class="span2">service</span>
+						</li>
+						<li>
+							<span class="span1">画廊</span>
+							<span class="span2">service</span>
+						</li>
+						<li>
+							<span class="span1">机构</span>
+							<span class="span2">service</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<!--展会轮播-->
+			<div id="banner">
+				<ul class="ban-ul">
+					<li class="ban-first">
+						<img src="img/zhanhui.jpg"/>
+					</li>
+					<li>
+						<img src="img/center-b.png"/>
+					</li>
+					<li>
+						<img src="img/top.png"/>
+					</li>
+				</ul>
+				<button class="ban-btnleft"><img src="img/ban-left.gif"/></button>
+				<button class="ban-btnright"><img src="img/ban-left.gif"/></button>
+			</div>
+			
+			<!--画廊-->
+			<div id="draw">
+				<!--上-->
+				<div class="up">
+					<p class="draw-p1">
+						<span>北</span>
+						<img style="transform: rotate(90deg);" src="img/hualang-handleft.gif" alt="" />
+					</p>
+					<ul class="draw-list1">
+						<li>
+							<img src="img/changqing.gif"/>
+							<span>常青画廊</span>
+						</li>
+						<li>
+							<img src="img/meiduo.gif"/>
+							<span>白马梅朵</span>
+						</li>
+						<li>
+							<img src="img/changqing.gif"/>
+							<span>常青画廊</span>
+						</li>
+						<li>
+							<img src="img/meiduo.gif"/>
+							<span>白马梅朵</span>
+						</li>
+						<li>
+							<img src="img/changqing.gif"/>
+							<span>常青画廊</span>
+						</li>
+						<li>
+							<img src="img/meiduo.gif"/>
+							<span>白马梅朵</span>
+						</li>
+						<li>
+							<img src="img/changqing.gif"/>
+							<span>常青画廊</span>
+						</li>
+					</ul>
+				</div>
+				<!--中-->
+				<div class="center">
+					<div class="left">
+						<p class="draw-p3">
+							<span>左</span>
+							<img src="img/hualang-handleft.gif" alt="" />
+						</p>
+						<ul class="draw-list3">
+							<li>
+								<img src="img/meiduo.gif"/>
+								<span>白马梅朵</span>
+							</li>
+							<li>
+								<img src="img/changqing.gif"/>
+								<span>常青画廊</span>
+							</li>
+						</ul>
+					</div>
+					<div class="right">
+						<p class="draw-p4">
+							<span>右</span>
+							<img src="img/hualang-handright.gif" alt="" />
+						</p>
+						<ul class="draw-list3">
+							<li>
+								<img src="img/meiduo.gif"/>
+								<span>白马梅朵</span>
+							</li>
+							<li>
+								<img src="img/changqing.gif"/>
+								<span>常青画廊</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--下-->
+				<div class="down">
+					<ul class="draw-list2">
+						<li>
+							<img src="img/changqing.gif"/>
+							<span>常青画廊</span>
+						</li>
+						<li>
+							<img src="img/meiduo.gif"/>
+							<span>白马梅朵</span>
+						</li>
+						<li>
+							<img src="img/changqing.gif"/>
+							<span>常青画廊</span>
+						</li>
+						<li>
+							<img src="img/meiduo.gif"/>
+							<span>白马梅朵</span>
+						</li>
+						<li>
+							<img src="img/changqing.gif"/>
+							<span>常青画廊</span>
+						</li>
+						<li>
+							<img src="img/meiduo.gif"/>
+							<span>白马梅朵</span>
+						</li>
+					</ul>
+					<p class="draw-p2">
+						<span>南</span>
+						<img style="transform: rotate(90deg);" src="img/hualang-handright.gif" alt="" />
+					</p>
+				</div>
+			</div>
+			
+			<!--画廊详情-->
+			<div id="draw-detail">
+				<h3 class="draw-h">
+					<p>常青画廊</p>
+					<p>Red star gallery</p>
+				</h3>
+				<div class="draw-div1">
+					<img class="" src="img/B2006072510075058127.png"/>
+					<div class="wen">
+						<h5> 简介 Introduction to the</h5>
+						<p class="wen-p1">常青画廊创建于2004年常青画廊创建于2004年常青画廊创建于2004年常青画廊创建于2004年常青画廊创建于2004年常青画廊创建于2004年常青画廊创建于2004年常青画廊创建于2004年常青画廊创建于2004年常青画廊创建于2004年常青画廊创建于2004年常青画廊创建于2004年常青画廊创建于2004年常青画廊创建于2004年常青画廊创建于2004年常青画廊创建于2004年常青画廊创建于2004年</p>
+						<div class="wen-div">
+							<div class="wen-div1">
+								<span>中</span>
+								<span>English</span>
+							</div>
+						</div>
+						<div class="message">
+							<div class="message-left">
+								<p>电话 The phone</p>
+								<p>02-6666666</p>
+								<p>邮箱</p>
+								<p>02-6666666</p>
+							</div>
+							<div class="message-right">
+								<p>电话 The phone</p>
+								<p>02-6666666</p>
+								<p>邮箱</p>
+								<p>02-6666666</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button class="go-btn">带我去  Take me go</button>
+			</div>
+			
+			<!--路线规划-->
+			<div id="way">
+				<ul class="way-ul">
+					<li id="way-first" class="activeli"><i></i><span>1</span></li>
+					<li class=""><i></i><span>2</span></li>
+					<li class=""><i></i><span>3</span></li>
+				</ul>
+				<div class="way-tou"></div>
+				<span class="way-span1"><img src="img/way-route.png"/></span>
+				<span class="way-span2"><img src="img/矢量智能对象.png"/></span>
+			</div>
+			
+			<!--手机获取路线-->
+			<div id="way-phone">
+				<div class="phone-top">
+					<button>×</button>
+				</div>
+				<input type="text" name="" id="phone-ipt" placeholder="请输入手机号" />
+				<div class="phone-bottom">
+					<ul>
+						<li>1</li>
+						<li class="centerli">2</li>
+						<li>3</li>
+						<li>4</li>
+						<li class="centerli">5</li>
+						<li>6</li>
+						<li>7</li>
+						<li class="centerli">8</li>
+						<li>9</li>
+						<li>*</li>
+						<li class="centerli">0</li>
+						<li>#</li>
+					</ul>
+					<span class="span1">确定</span>
+					<span>取消</span>
+				</div>
+			</div>
+			
+			<!--机构-->
+			<div id="jigou">
+				<div class="jg-div">
+					<p class="jg-p">
+						<span>企业单位</span>
+						<!--<img src="img/hualang-handleft.gif" alt="" />-->
+					</p>
+					<ul class="jg-list">
+						<li>
+							<img src="img/changqing.gif"/>
+							<span>常青画廊</span>
+						</li>
+						<li>
+							<img src="img/meiduo.gif"/>
+							<span>白马梅朵</span>
+						</li>
+					</ul>
+				</div>
+				<div class="jg-div">
+					<p class="jg-p">
+						<span>工作室</span>
+						<!--<img src="img/hualang-handleft.gif" alt="" />-->
+					</p>
+					<ul class="jg-list">
+						<li>
+							<img src="img/changqing.gif"/>
+							<span>常青画廊</span>
+						</li>
+						<li>
+							<img src="img/meiduo.gif"/>
+							<span>白马梅朵</span>
+						</li>
+					</ul>
+				</div>
+				<div class="jg-div">
+					<p class="jg-p">
+						<span>摄影机构</span>
+						<!--<img src="img/hualang-handleft.gif" alt="" />-->
+					</p>
+					<ul class="jg-list">
+						<li>
+							<img src="img/changqing.gif"/>
+							<span>常青画廊</span>
+						</li>
+						<li>
+							<img src="img/meiduo.gif"/>
+							<span>白马梅朵</span>
+						</li>
+					</ul>
+				</div>
+				<div class="jg-div">
+					<p class="jg-p">
+						<span>策划机构</span>
+						<!--<img src="img/hualang-handleft.gif" alt="" />-->
+					</p>
+					<ul class="jg-list">
+						<li>
+							<img src="img/changqing.gif"/>
+							<span>常青画廊</span>
+						</li>
+						<li>
+							<img src="img/meiduo.gif"/>
+							<span>白马梅朵</span>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+			
+			<!--search搜索-->
+			<div id="search">
+				<div class="search-detail">
+					<button class="close"><img src="img/close.png"/></button>
+					<ul class="search-list">
+						<li>红叹号艺术<img src="img/dc63304e834e6f1d9ace9bdec15f5cdb-拷贝-5.png" alt="" /></li>
+						<li>红叹号艺术<img src="img/dc63304e834e6f1d9ace9bdec15f5cdb-拷贝-5.png" alt="" /></li>
+						<li>红叹号艺术<img src="img/dc63304e834e6f1d9ace9bdec15f5cdb-拷贝-5.png" alt="" /></li>
+						<li>红叹号艺术<img src="img/dc63304e834e6f1d9ace9bdec15f5cdb-拷贝-5.png" alt="" /></li>
+						<li>红叹号艺术<img src="img/dc63304e834e6f1d9ace9bdec15f5cdb-拷贝-5.png" alt="" /></li>
+						<li>红叹号艺术<img src="img/dc63304e834e6f1d9ace9bdec15f5cdb-拷贝-5.png" alt="" /></li>
+						<li>红叹号艺术<img src="img/dc63304e834e6f1d9ace9bdec15f5cdb-拷贝-5.png" alt="" /></li>
+						<li>红叹号艺术<img src="img/dc63304e834e6f1d9ace9bdec15f5cdb-拷贝-5.png" alt="" /></li>
+						<li>红叹号艺术<img src="img/dc63304e834e6f1d9ace9bdec15f5cdb-拷贝-5.png" alt="" /></li>
+					</ul>
+					
+					<div class="search-tex">
+						<input type="text" id="search-ipt"/>
+						<button id="search-btn">清空</button>
+					</div>
+				</div>
+				
+				<div class="search-top">
+					<div class="search-left">
+						<span>A</span>
+						<span>B</span>
+						<span>C</span>
+						<span>D</span>
+						<span>E</span>
+						<span>F</span>
+						<span>G</span>
+						<span>H</span>
+						<span>I</span>
+						<span>J</span>
+						<span>K</span>
+						<span>L</span>
+						<span>M</span>
+						<span>N</span>
+						<span>O</span>
+						<span>P</span>
+						<span>Q</span>
+						<span>R</span>
+						<span>S</span>
+						<span>T</span>
+						<span>U</span>
+						<span>V</span>
+						<span>W</span>
+						<span>X</span>
+						<span>Y</span>
+						<span>Z</span>
+					</div>
+					<div class="search-right">
+						<span>※</span>
+					</div>
+				</div>
+				
+				<div class="search-bottom">
+					<div>
+						<span>艺术路线</span>
+						<span>艺术路线</span>
+						<span>艺术路线</span>
+						<span>艺术路线</span>
+						<span>艺术路线</span>
+						<span>艺术路线</span>
+						<span>艺术路线</span>
+					</div>
+				</div>
+			</div>
+			
+			<div id="box3d" style="width: 500px;height: 500px;border: 1px solid #000000;position: fixed;right: 0;top: 0;z-index: 1000;">
+				
+			</div>
+		</div>
+		
+		
+		<script src="js/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/tweenjs-0.6.2.combined.js"></script>
+		<script src="js/three.min.js"></script>
+		<script src="js/DDSLoader.js"></script>
+		<script src="js/OBJLoader.js"></script>
+		<script src="js/MTLLoader.js"></script>
+		<script src="js/Detector.js"></script>
+		<script src="js/stats.min.js"></script>
+		<script src="js/OrbitControls.js"></script>
+		
+		
+		<script src="js/ammo.js"></script>
+		<script src="js/ammo.three.js"></script>
+		<script src="js/SEA3D.js"></script>
+		<script src="js/SEA3DLZMA.js"></script>
+		<script src="js/SEA3DLoader.js"></script>
+		<script src="js/SEA3DLegacy.js"></script>
+		<script src="js/SEA3DAmmoLoader.js"></script>
+		<script src="js/stats.min.js"></script>
+		<script src="js/dat.gui.min.js"></script>
+		
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
